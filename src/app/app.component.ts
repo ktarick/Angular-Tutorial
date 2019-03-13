@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello-world';
+  title = 'Angular 7';
+  subtitle: string = 'From .Net BC 5';
+  
+  inputTxt: string = "Default Text";
+
+  changeTitle(txt: string): void{
+    this.title = txt;
+  }
 }
